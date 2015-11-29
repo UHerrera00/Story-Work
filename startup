@@ -1,0 +1,49 @@
+
+
+*title Parent World
+*author Uriel Herrera
+*scene_list
+  startup
+  animal
+  variables
+  gosub
+  ending
+  death
+
+*create leadership 50
+*create strength 50
+
+Welcome to a wonderful new Adventure!
+
+
+*page_break
+
+The moonlight shines brightly through a window Crack. A window built into the side of a large hollow Oak. Deep underneath the roots the light flows to illuminate a miracle. 
+
+The birth of a child! 
+
+*choice
+  #Let me be born!!!
+    The beautiful fur of your mother glitters in the sunlight. The only other being in the room tends to her as a midwife. The two ladies expressing a burst of emotion. 
+    
+    A curious detail however. How would you attribute the physical appearance of your mother? 
+    *choice
+      #A feline.
+        *finish
+      #A mouse.
+        *finish
+      #A dog.
+        *finish
+  #Wait... I'd like to know what's going on first, but quickly. I can't wait in the womb for long.
+    Alright then. Where to start!?  
+    *choice
+      #Accept the terms for now.
+        Eventually, the barbarian westerners conquer you anyway, destroying their
+        bread basket, and the entire region starves.
+        *finish
+      #Threaten to salt our fields if they don't offer better terms.
+        They blink.  Your majesty gets a fair price for wheat.
+        *finish
+  #Wait...I'm lost. Please start from the beginning. The very beginning. With detail. Lots of detail. No one is allowed to die without me knowing first! 
+    Alright then. Where to start!? 
+    *finish
