@@ -1,5 +1,3 @@
-
-
 *title Parent World
 *author Uriel Herrera
 *scene_list
@@ -10,40 +8,63 @@
   ending
   death
 
-*create leadership 50
-*create strength 50
+*create leadership 0
+*create strength 0
+*create name "Not Born Yet"
+
 
 Welcome to a wonderful new Adventure!
 
+*page_break  
 
-*page_break
+The moonlight shines brightly through a window Crack. A window built into the side of a large 
 
-The moonlight shines brightly through a window Crack. A window built into the side of a large hollow Oak. Deep underneath the roots the light flows to illuminate a miracle. 
+hollow Oak. Deep underneath the roots the light flows to illuminate a miracle. 
 
 The birth of a child! 
 
 *choice
   #Let me be born!!!
-    The beautiful fur of your mother glitters in the sunlight. The only other being in the room tends to her as a midwife. The two ladies expressing a burst of emotion. 
-    
-    A curious detail however. How would you attribute the physical appearance of your mother? 
-    *choice
-      #A feline.
-        *finish
-      #A mouse.
-        *finish
-      #A dog.
-        *finish
+    *goto nationality 
   #Wait... I'd like to know what's going on first, but quickly. I can't wait in the womb for long.
     Alright then. Where to start!?  
     *choice
-      #Accept the terms for now.
-        Eventually, the barbarian westerners conquer you anyway, destroying their
-        bread basket, and the entire region starves.
-        *finish
-      #Threaten to salt our fields if they don't offer better terms.
-        They blink.  Your majesty gets a fair price for wheat.
-        *finish
-  #Wait...I'm lost. Please start from the beginning. The very beginning. With detail. Lots of detail. No one is allowed to die without me knowing first! 
+      #The Beginning
+        *goto nationality
+      #Wherever, just catch me up!
+        *goto nationality
+  #Wait...I'm lost. Please start from the beginning. The very beginning. With detail. Lots of 
+
+detail. No one is allowed to die without me knowing first! 
     Alright then. Where to start!? 
-    *finish
+    *goto nationality
+
+*label nationality
+The beautiful fur of your mother glitters in the sunlight. The only other being in the room tends 
+
+to her as a midwife. The two ladies expressing a burst of emotion. 
+    
+A curious detail however. How would you attribute the physical appearance of your mother? 
+*choice
+  #A feline.
+    *goto gender
+  #A mouse.
+    *goto gender
+  #A dog.
+    *goto gender
+
+*label gender
+The mother screams in agony as the head of the newborn pokes out. Pain and anguish turn to relief 
+
+as the midwife holds the new born in her arms. "I wonder what the little one is?"
+*choice 
+  #A handsome boy!
+    *goto name 
+  #A beautiful baby girl. 
+    *goto name
+
+*label name 
+Such a beautiful $(gender). I wonder miss what shall the kid's name be?
+*input_text name
+  *page_break
+
